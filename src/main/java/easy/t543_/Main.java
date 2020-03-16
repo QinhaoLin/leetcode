@@ -1,4 +1,4 @@
-package easy.t543;
+package easy.t543_;
 
 import javax.swing.tree.TreeNode;
 
