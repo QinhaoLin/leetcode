@@ -25,7 +25,7 @@ public class Main {
             freq[c]++;
         }
 
-        HashMap<Integer, String> map = new HashMap<>();
+        HashMap<Integer, String> map = new HashMap<>(256);
         for (int i = 0; i < freq.length; i++) {
             if (freq[i] == 0) {
                 continue;
