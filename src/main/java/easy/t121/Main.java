@@ -7,9 +7,8 @@ package easy.t121;
  */
 public class Main {
 
-    private final static int[] test = {7, 1, 5, 3, 4, 6};
-
     public static void main(String[] args) {
+        int[] test = {7, 1, 5, 3, 4, 6};
         System.out.println("Main.maxProfit(test) = " + Main.maxProfit2(test));
     }
 
@@ -29,7 +28,7 @@ public class Main {
         }
         int max = 0;
         int min = prices[0];
-        for (int i = 0; i < test.length; i++) {
+        for (int i = 0; i < prices.length; i++) {
             max = Math.max(max, prices[i] - min);
             min = Math.min(min, prices[i]);
         }
