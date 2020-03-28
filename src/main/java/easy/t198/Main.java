@@ -12,6 +12,9 @@ public class Main {
     }
 
     public int rob(int[] nums) {
+        if (nums.length < 1) {
+            return 0;
+        }
         if (nums.length == 1) {
             return nums[0];
         }
