@@ -103,9 +103,6 @@ public class Main {
         int left = 0 + 1;
         // 右指针
         int right = height.length - 1 - 1;
-        for (int i = 1; i < height.length - 1; i++) {
-
-        }
         while (left <= right) {
             // 从左到右更
             if (height[left - 1] < height[right + 1]) {
@@ -115,7 +112,6 @@ public class Main {
                     sum = sum + (min - height[left]);
                 }
                 left++;
-
             } else { // 从右到左更
                 max_right = Math.max(max_right, height[right + 1]);
                 int min = max_right;
