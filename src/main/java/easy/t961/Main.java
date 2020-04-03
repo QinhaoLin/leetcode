@@ -29,8 +29,8 @@ public class Main {
                 return arr[i];
             }
         }
-
         // 上面循环没找到，那必然是最后两个数是相等的。 比如：[1, 2, 3, 1]
         return arr[len - 1];
     }
+
 }
