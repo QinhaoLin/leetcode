@@ -20,11 +20,11 @@ public class ThreadOderExDemo {
         Thread t3 = new Thread(() -> {
             action();
         }, "t3");
-        thradStartAndWait(t1);
-        thradStartAndWait(t2);
-        thradStartAndWait(t3);
+        threadStartAndWait(t1);
+        threadStartAndWait(t2);
+        threadStartAndWait(t3);
     }
-    private static void thradStartAndWait(Thread thread) throws InterruptedException {
+    private static void threadStartAndWait(Thread thread) throws InterruptedException {
         if (Thread.State.NEW.equals(thread.getState())){
             thread.start();
         }
