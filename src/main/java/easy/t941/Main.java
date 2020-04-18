@@ -20,6 +20,10 @@ public class Main {
         while (i < A.length - 1 && A[i] < A[i + 1]) {
             i++;
         }
+        // 排除全是递增或者递减的情况
+        if (i == A.length - 1 || i == 0) {
+            return false;
+        }
         // 下山
         while (i < A.length - 1 && A[i] > A[i + 1]) {
             i++;
