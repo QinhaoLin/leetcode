@@ -1,5 +1,7 @@
 package Interview.t17_04;
 
+import java.util.Collection;
+
 /**
  * @fileName: Main
  * @description:
@@ -20,6 +22,7 @@ public class Main {
      * @return
      */
     public int missingNumber(int[] nums) {
+
         int sum = 0;
         for (int i = 0; i < nums.length; i++) {
             sum ^= i;
