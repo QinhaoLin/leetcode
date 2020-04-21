@@ -1,5 +1,9 @@
 package easy.t941;
 
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+
 /**
  * @fileName: Main
  * @description:
