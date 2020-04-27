@@ -1,4 +1,4 @@
-package easy.t437;
+package easy.t437_;
 
 /**
  * @fileName: Main
