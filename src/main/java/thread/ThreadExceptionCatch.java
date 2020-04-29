@@ -27,4 +27,21 @@ public class ThreadExceptionCatch {
         // 当线程执行完毕（正常或者线程遇到异常）
         System.out.println("thread.isAlive = " + thread.isAlive());
     }
+
+    /*public static void main(String[] args) {
+        Thread.setDefaultUncaughtExceptionHandler((thread, throwable) -> {
+            System.out.printf("线程[%s]遇到了异常，详细信息：[%s]\n ", thread.getName(), throwable.getMessage());
+        });
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        executorService.execute(()->{
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("线程：" + Thread.currentThread().getName() + "正在执行");
+            throw new RuntimeException("线程抛出异常");
+        });
+        executorService.shutdown();
+    }*/
 }

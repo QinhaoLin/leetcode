@@ -22,7 +22,6 @@ public class Main {
         }
         return sum;
     }
-
     public int titleToNumber2(String s) {
         int sum = 0;
         for (int i = 0; i < s.length(); i++) {
