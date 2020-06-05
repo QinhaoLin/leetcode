@@ -7,7 +7,7 @@ package easy.t169;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {2, 2, 1, 1, 1, 2, 2};
+        int[] nums = {3, 2, 3};
         System.out.println("new Main().majorityElement() = " + new Main().majorityElement(nums));
     }
 
@@ -28,13 +28,13 @@ public class Main {
         int res = nums[0];
         int count = 1;
         for (int i = 1; i < nums.length; i++) {
-            if (nums[i] == res) {
+            if (res == nums[i])
                 count++;
-            } else {
+            else {
                 count--;
-            }
-            if (count == 0) {
-                res = nums[i];
+                if (count == 0) {
+                    res = nums[i + 1];
+                }
             }
         }
         return res;
