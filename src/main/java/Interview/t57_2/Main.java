@@ -37,8 +37,6 @@ public class Main {
                 sum -= left;
                 left++;
             } else {
-                System.out.println("right = " + right);
-                System.out.println("left = " + left);
                 System.out.println();
                 int[] num = new int[right - left + 1];
                 for (int x = left, y = 0; x <= right; x++, y++) {
