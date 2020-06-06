@@ -1,5 +1,7 @@
 package easy.t13;
 
+import com.sun.xml.internal.bind.v2.TODO;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +12,8 @@ import java.util.Map;
  */
 public class Main {
     public static void main(String[] args) {
-
+        String s = "III";
+        System.out.println("new Main().romanToInt() = " + new Main().romanToInt(s));
     }
 
     public int romanToInt(String s) {
