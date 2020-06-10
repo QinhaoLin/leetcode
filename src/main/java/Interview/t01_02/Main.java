@@ -16,7 +16,7 @@ public class Main {
         if (s1.length() != s2.length()) {
             return false;
         }
-        int[] counter = new int[256];
+        int[] counter = new int[126];
         char[] chars1 = s1.toCharArray();
         for (int i = 0; i < chars1.length; i++) {
             counter[chars1[i]]++;
