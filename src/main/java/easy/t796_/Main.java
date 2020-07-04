@@ -1,4 +1,4 @@
-package easy.t796;
+package easy.t796_;
 
 /**
  * @fileName: Main
@@ -9,14 +9,20 @@ public class Main {
     public static void main(String[] args) {
         // "kifcqeiqoh"
         // "ayyrddojpq"
-        String A = "abcde";
-        String B = "cdeab";
+
+        // "bbbacddceeb"
+        // "ceebbbbacdd"
+        String A = "bbbacddceeb";
+        String B = "ceebbbbacdd";
         System.out.println("new Main().rotateString() = " + new Main().rotateString(A, B));
     }
 
     public boolean rotateString(String A, String B) {
         if (A.length() != B.length()) {
             return false;
+        }
+        if (A.equals(B)) {
+            return true;
         }
         int move = 0;
         int strLen = B.length();
