@@ -12,8 +12,17 @@ public class Main {
         System.out.println("new Main().findTheDifference() = " + String.valueOf(new Main().findTheDifference(s, t)));
     }
 
-
     public char findTheDifference(String s, String t) {
+        char res = 0;
+        int lens = s.length();
+        for (int i = 0; i < lens; i++) {
+            res ^= s.charAt(i) ^ t.charAt(i);
+        }
+        res ^= t.charAt(lens);
+        return res;
+    }
+
+    public char findTheDifference2(String s, String t) {
         int[] cont = new int[26];
         for (int i = 0; i < t.length(); i++) {
             cont[t.charAt(i) - 'a']++;
