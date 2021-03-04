@@ -1,4 +1,4 @@
-package easy.t220_;
+package medium.t220_;
 
 import java.util.HashMap;
 
