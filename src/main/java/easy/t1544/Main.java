@@ -7,6 +7,7 @@ package easy.t1544;
  */
 public class Main {
     public static void main(String[] args) {
+        // ”Î 1047 Ã‚¿‡À∆
         String s = "Pp";
         System.out.println("new Main().makeGood(s) = " + new Main().makeGood(s));
     }
