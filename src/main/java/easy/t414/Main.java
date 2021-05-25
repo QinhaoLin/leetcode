@@ -22,20 +22,20 @@ public class Main {
         long firstMax = Long.MIN_VALUE;
         long secondMax = Long.MIN_VALUE;
         long thirdMax = Long.MIN_VALUE;
-        for (int n : nums) {
+        for (int num : nums) {
             // 过滤重复的数
-            if (firstMax == n || secondMax == n) {
+            if (firstMax == num || secondMax == num) {
                 continue;
             }
-            if (n > firstMax) {
+            if (num > firstMax) { // 若 num 比第一大还大
                 thirdMax = secondMax;
                 secondMax = firstMax;
-                firstMax = n;
-            } else if (n > secondMax) {
+                firstMax = num;
+            } else if (num > secondMax) { // num 比第二大还大
                 thirdMax = secondMax;
-                secondMax = n;
-            } else if (n > thirdMax) {
-                thirdMax = n;
+                secondMax = num;
+            } else if (num > thirdMax) { // num 比第三大的数大
+                thirdMax = num;
             }
         }
         return thirdMax == Long.MIN_VALUE ? (int) firstMax : (int) thirdMax;
