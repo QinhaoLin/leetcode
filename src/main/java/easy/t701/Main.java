@@ -26,10 +26,11 @@ public class Main {
 //        if (root.val==val){
 //            // BST 中一般不会插入已存在元素
 //        }
-        // 当前节点的值，小于插入的值，往右子树插
+        // 如果 val 大于根节点，说明值为 val 的节点应该插入到 root 节点的右子树上
         if (root.val < val) {
             root.right = insertIntoBST(root.right, val);
         }
+        // 如果 val 小于根节点，说明值为 val 的节点应该插入到 root 节点的左子树上
         if (root.val > val) {
             root.left = insertIntoBST(root.left, val);
         }
