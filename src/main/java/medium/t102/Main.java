@@ -19,10 +19,10 @@ public class Main {
      * @return
      */
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> lists = new ArrayList<>();
+        List<List<Integer>> res = new ArrayList<>();
         // 判空处理
         if (root == null) {
-            return lists;
+            return res;
         }
         // 这里存放树的节点
         List<TreeNode> nodes = new ArrayList<>();
@@ -49,9 +49,9 @@ public class Main {
                 }
             }
             // 本次数据加入总的数据集合中
-            lists.add(list);
+            res.add(list);
         }
-        return lists;
+        return res;
     }
 
 }
