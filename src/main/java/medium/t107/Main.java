@@ -1,28 +1,24 @@
-package medium.t102;
+package medium.t107;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
  * @fileName: Main
  * @description:
- * @create: 2021-06-04 09:33
+ * @create: 2021-06-08 11:01
  */
 public class Main {
     public static void main(String[] args) {
 
     }
 
-    /**
-     *  循环
-     * @param root
-     * @return
-     */
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> lists = new ArrayList<>();
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
         // 判空处理
         if (root == null) {
-            return lists;
+            return res;
         }
         // 这里存放树的节点
         List<TreeNode> nodes = new ArrayList<>();
@@ -37,40 +33,36 @@ public class Main {
             for (int i = 0; i < size; i++) {
                 // 取出第一集合元素，按照加入集合顺序打印（模拟队列）
                 TreeNode tempNode = nodes.remove(0);
-                // 把节点（类似于根节点）信息加入信息集合
                 list.add(tempNode.val);
                 if (tempNode.left != null) {
-                    // 如果有左孩子先加左孩子
                     nodes.add(tempNode.left);
                 }
                 if (tempNode.right != null) {
-                    // 如果有右孩子加入右孩子
                     nodes.add(tempNode.right);
                 }
             }
-            // 本次数据加入总的数据集合中
-            lists.add(list);
+            res.add(list);
         }
-        return lists;
+        Collections.reverse(res);
+        return res;
     }
 
-}
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+        TreeNode() {
+        }
 
-    TreeNode() {
-    }
+        TreeNode(int val) {
+            this.val = val;
+        }
 
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }
