@@ -9,6 +9,7 @@
 
 Ê¾Àı 1£º   
 ![image](https://assets.leetcode.com/uploads/2020/10/03/swap_ex1.jpg)
+
 > ÊäÈë£ºhead = [1,2,3,4]  
 Êä³ö£º[2,1,4,3]  
 
