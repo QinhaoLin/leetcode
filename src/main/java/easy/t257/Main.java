@@ -31,6 +31,7 @@ public class Main {
      * @param paths
      */
     public void constructPaths(TreeNode root, String path, List<String> paths) {
+
         if (root == null) {
             return;
         }
