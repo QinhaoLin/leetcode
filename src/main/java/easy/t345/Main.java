@@ -8,7 +8,7 @@ package easy.t345;
 public class Main {
     public static void main(String[] args) {
         String s = "hello";
-
+        System.out.println("new Main().reverseVowels(s) = " + new Main().reverseVowels(s));
     }
 
     public String reverseVowels(String s) {
