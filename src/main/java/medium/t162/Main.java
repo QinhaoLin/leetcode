@@ -17,7 +17,7 @@ public class Main {
         while (left < right) {
             int mid = left + (right - left) / 2;
             if (nums[mid] < nums[mid + 1]) {
-                // ËµÃ÷ÓÒ²à¿ÉÄÜ´æÔÚ·åÖµ£»
+                // è¯´æ˜Žå³ä¾§å¯èƒ½å­˜åœ¨å³°å€¼ï¼›
                 left = mid + 1;
             } else {
                 right = mid;
