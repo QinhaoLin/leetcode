@@ -13,6 +13,18 @@ public class Main {
         System.out.println("i = " + i);
     }
 
+    public int minNumber2(int[] nums1, int[] nums2) {
+        int a = 0, b = 0;
+        for (int num : nums1) {
+            a |= 1 << (num - 1);
+        }
+        for (int num : nums2) {
+            b |= 1 << (num - 1);
+        }
+        int s = a & b, x = s & -s;
+
+        return 0;
+    }
 
     public int minNumber(int[] nums1, int[] nums2) {
         // 1. 判断2个数组中是否存在相同的数字

@@ -1,4 +1,4 @@
-# v2605. 从两个数字数组里生成最小数字
+# 2605. 从两个数字数组里生成最小数字
 > https://leetcode.cn/problems/form-smallest-number-from-two-digit-arrays/  
 
 给你两个只包含 1 到 9 之间数字的数组 nums1 和 nums2 ，每个数组中的元素 互不相同 ，请你返回 最小 的数字，两个数组都 至少 包含这个数字的某个数位。
