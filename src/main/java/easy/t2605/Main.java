@@ -22,6 +22,9 @@ public class Main {
             b |= 1 << (num - 1);
         }
         int s = a & b, x = s & -s;
+        if (x != 0) {
+            // return (int) (Math.log10(x)/Math.log() + 1);
+        }
         return 0;
     }
 
