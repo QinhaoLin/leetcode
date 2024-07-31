@@ -22,7 +22,6 @@ public class Main {
             b |= 1 << (num - 1);
         }
         int s = a & b, x = s & -s;
-
         return 0;
     }
 
