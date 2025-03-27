@@ -17,6 +17,7 @@ public class Test {
     // 4
     // 5
     // 66
+    // 7
     public int test() {
         int[][] arr = {{1, 7, 3, 4}
                 , {4, 2, 5, 1}
