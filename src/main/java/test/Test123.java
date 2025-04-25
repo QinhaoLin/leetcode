@@ -5,10 +5,14 @@ import java.util.List;
 
 public class Test123 {
     private final static List<String> LIST = Arrays.asList("应用", "PN", "封装", "包装");
-
+    // 111222
     // 第一次 commit
     // 第二次 commit
     // 第三次 commit
+    // 1111
+    // 2222
+    // 4
+    // 333
     public static void main(String[] args) {
         String test = "应用";
         boolean contains = LIST.contains(test);
