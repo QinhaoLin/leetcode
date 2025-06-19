@@ -13,6 +13,7 @@ public class Test123 {
     // 2222
     // 4
     // 333
+    // 555
     public static void main(String[] args) {
         String test = "应用";
         boolean contains = LIST.contains(test);
