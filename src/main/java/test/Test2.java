@@ -43,6 +43,7 @@ public class Test2 {
 
         // 注释1
         // 注释2
+        // 注释3
     }
 
 
