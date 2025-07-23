@@ -40,6 +40,8 @@ public class Test2 {
         map.put("1", "1");
         map.put("2", "2");
         System.out.println("map = " + map);
+
+        // 注释1
     }
 
 
