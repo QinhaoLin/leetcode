@@ -42,6 +42,7 @@ public class Test2 {
         System.out.println("map = " + map);
 
         // 注释1
+        // 注释2
     }
 
 
